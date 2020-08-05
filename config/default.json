@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://yuw14:woshiyoucai0@yuw14devconnector.yatkr.mongodb.net/yuw14DevConnector?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken",
-  "githubClientId": "06d38a384610006bb762",
-  "githubSecret": "b388760eef2fe31a7e9678a9710a50204b1be7f0"
-}

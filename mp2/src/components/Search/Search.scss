@@ -1,0 +1,14 @@
+//should modify
+.Search {
+    left: 50%;
+    transform: translate(-50%,0);
+    position: relative;
+    // background-color:rgb(255,235,205);
+    background-color:white;
+    text-align: center;
+}
+
+.allContent {
+    display: flex;
+    flex-wrap: wrap;
+}

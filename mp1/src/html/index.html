@@ -1,0 +1,216 @@
+<!--  inspired from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2 -->
+<!-- https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+<!-- inspired from https://github.com/Drake-Eidukas -->
+<!--  https://stackoverflow.com/questions/10260666/animate-scrolling-with-css3
+ -->
+ <!-- inspired from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+ -->
+ <!-- https://stackoverflow.com/questions/10260666/animate-scrolling-with-css3 -->
+<!--  http://www.justinaguilar.com/animations/css/animations.css
+ --> 
+ <!-- mp1 demo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your HTML code for head here -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yu Wang">
+    <title>Mourn Kobe</title>
+</head>
+
+<body>
+<!-- the navigation bar -->    
+    <nav class="nav-bar">
+        <div class="shrink">
+        </div>
+        <ul>
+            <li class="inactive_selectable">Kobe</li>
+            <li class="selectable lightened" id="news">News</li>
+            <li class="selectable" id="two-cols">Honors</li>
+            <li class="selectable" id="slides">Highlights</li>          
+            <li class="selectable" id="video">Video</li>
+            <li class="selectable" id="last-section">Mourn</li>
+        </ul>
+    </nav>
+
+    <div class="interval-block"></div>
+
+<!-- here is the float modal picture-->
+    <!-- inspired from mp1-demo -->
+    <!--     <div class="modal" >
+           <img src="/assets/mourn.png" alt="doggo"/>
+   </div> -->
+
+    <div class="modal-block slide-box" id="big-modal-pic">
+         <!-- &times means X  -->
+        <span class="close" id="close-button">&times;</span>
+       <div class="modal-pic">
+           <img src="https://www.gannett-cdn.com/presto/2020/01/30/USAT/b20937a5-3ded-4ec7-8e3e-566968de8b32-USP_NBA-_Postponed-Los_Angeles_Clippers_at_Los_Ang.jpg?crop=2480,1731,x0,y0&width=1280">
+       </div>
+   </div> 
+
+   <div class="main-body">
+    <article class="main-article">
+<!--   first section: Heading and mourn pic -->        
+        <header class="article-header">
+            <h1>NBA fans mourn Kobe Bryant following his death in helicopter crash</h1>
+        </header>
+
+        <section class="main-content-section" id="section-mourn-pic">
+            <h2>Los Angeles Lakers fans pay their respects at a Staples Center memorial to NBA legend Kobe Bryant in Los Angeles.</h2>
+            <img src="https://www.gannett-cdn.com/presto/2020/01/30/USAT/b20937a5-3ded-4ec7-8e3e-566968de8b32-USP_NBA-_Postponed-Los_Angeles_Clippers_at_Los_Ang.jpg?crop=2480,1731,x0,y0&width=1280" id="normal-mourn-pic">
+            <h3>click on this picture</h3>
+        </section>
+
+
+
+<!--         dividor -->        
+        <br>
+        <hr class="dividor">
+        <br>
+<!-- second section: 2 columns Kobe rankings-->
+    <section class="main-content-section" id="section-rankings">
+        <h1>Let's see Kobe's carrer rankings</h1>
+        <div class="double-cols slide-box">
+            <div class="column-left">
+                <h2>Career-Season</h2>
+                <p>Points – 4th (33,643)<br>
+Field goal attempts – 3rd (26,200)<br>
+Field goals made – 5th (11,719)<br>
+Field goals missed – 1st (14,481)<br>
+Free throws made – 3rd (8,378)<br>
+Free throw attempts – 5th (10,011)<br>
+Points per game – 12th (25.00)<br>
+3-point field goal attempts – 6th (5,546)<br>
+Turnovers – 3rd (4,010)<br>
+Free throw % – 84th (.8369)</p>
+            </div>
+            <div class="column-right">
+                <h3>Career-Playoffs</h3>
+                <p>
+    3-point field goal attempts – 3rd (882)<br>
+    3-point field goals made – 6th (292)<br>
+    Field goal attempts – 3rd (4,499)<br>
+    Free throws made – 3rd (1,320)<br>
+    Points – 4th (5,640)<br>
+    Minutes played – 3rd (8,641)<br>
+    Turnovers – 3rd (647)<br>
+    Field goals made – 5th (66,014)</p>
+            </div>   
+        </div>   
+    </section>
+<!--         dividor -->        
+        <br>
+        <hr class="dividor">
+        <br>
+  <!-- third section: slides -->       
+    <footer id="footer-highlights">
+            <h1>Look at those highlights of Kobe's Career</h1>
+            <div class="carousal-div">
+                <div class="left-skinny-box slide-box">
+                    <button class="left-button" id="press_left">
+                        <a href="#" class="arrow-left">&#8249;</a>
+                    </button>
+                </div>
+                <div class="middle-wide-box slide-box" id="carousal-box">
+                    <img src="assets/court.jpeg" id="carousal-pic" >
+                </div>
+                <div class="right-skinny-box slide-box">
+                    <button class="right-button" id="press_right">
+<!--                         <i class="fa fa-angle-double-right size-48" aria-hidden="true"></i> -->
+                        <a href="#" class="arrow-right">&#8250;</a>
+                    </button>                    
+                </div>
+            </div>
+    </footer>
+
+    </article>
+
+
+    <br>
+    <hr class="dividor">
+    <br>    
+<!--fourth section: video  -->
+
+    <div class="video-container" id="video-container-box">
+        <h1> Reliving the Black Mamba’s BEST Career Highlights</h1>
+<!--         <video width="50%" height="auto" controls>
+        <source src="https://youtu.be/XyjPxwN0ncY" type="video/webm"> 
+        </video>  -->
+        <iframe width="auto" height="50%"
+        src="https://www.youtube.com/embed/XyjPxwN0ncY?playlist=XyjPxwN0ncY&loop=1" > 
+        </iframe> 
+    </div>
+
+    <br>
+    <hr class="dividor">
+    <br>  
+    
+<!-- 5th section: mourn yourselt, left your social media -->
+    <div class="social-media-containter" id="social-media-box">
+        <h1>Mourn Kobe</h1>
+        <h2>Subscribe our social media, leave your mourn message to Kobe and we will post it</h2>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+        <ul id="social-media-list">
+            <li>
+                <div>
+                    <h3>Instagram</h3>
+<!--                     <p1 class="fa fa-instagram size-90" aria-hidden="true" onclick="window.open('https://www.instagram.com/')"></p1> -->
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Facebook</h3>
+<!--                     <p1 class="fa fa-instagram size-90" aria-hidden="true" onclick="window.open('https://www.Facebook.com/')"></p1> -->
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>                
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Twitter</h3>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>                
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Google</h3>
+                    <a href="#" class="google"><i class="fa fa-google"></i></a>                
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>                
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>YouTube</h3>
+                    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>                
+                </div>
+            </li>
+<!--             <li>
+                <div>
+                    <h3>pinterest</h3>
+                    <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>                
+                </div>
+            </li> -->
+            <li>
+                <div class="animation">
+                    <span class="position-initial"></span>
+                    <button class="button-small">Move</button>
+                </div>
+            </li>            
+        </ul>
+    </div>
+
+
+    </div>
+    <!-- DO NOT REMOVE THE FOLLOWING LINE -->
+    <script src="bundle.js" type="text/javascript"></script>
+</body>
+
+</html>

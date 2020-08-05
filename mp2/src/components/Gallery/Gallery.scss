@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

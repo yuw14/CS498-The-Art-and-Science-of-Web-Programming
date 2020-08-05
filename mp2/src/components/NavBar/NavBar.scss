@@ -1,0 +1,35 @@
+// .header {
+//     background-color: black;
+//     width:100%;
+//     height: auto;
+// }
+// .title{
+//     text-align: center;
+//     color: blanchedalmondx;
+// }
+
+// .buttons {
+//     color: blanchedalmond;
+//     display: flex;
+//     align-items: center;
+// }
+
+//should modify
+.header {
+    width: 100%;
+    height: auto;
+    background-color: black;;
+}
+
+.buttons {
+    padding-left:auto;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    max-width: 1175px;
+    min-height: 102px;
+    margin: 0 auto;
+    padding: 22px 0px;
+    color: blanchedalmond;
+}
